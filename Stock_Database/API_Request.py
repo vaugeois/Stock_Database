@@ -3,10 +3,11 @@
 @author: Antoine Vaugeois
 """
 import requests
+import time
 
-API_KEY="G2GH1YX1LOC6GTFU"
 
 def get_data(symbol):
+    API_KEY="G2GH1YX1LOC6GTFU"
     req="https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol="+symbol+"&outputsize=full&apikey="+'"'+API_KEY+'"'
     try:
     
